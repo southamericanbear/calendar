@@ -1,12 +1,12 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import {} from "react-redux";
-import { evenetDelete } from "../../actions/events";
+import { eventStartDelete } from "../../actions/events";
 
 export const DeleteEventFab = () => {
   const dispatch = useDispatch();
 
-  const handleDelete = () => dispatch(evenetDelete());
+  const handleDelete = () => dispatch(eventStartDelete());
 
   return (
     <button onClick={handleDelete} className="btn btn-danger fab-danger">
